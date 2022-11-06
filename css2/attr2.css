@@ -1,0 +1,146 @@
+.d-block {
+  display: inline-block;
+  background-color: aquamarine;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  /* margin: 10px 40px 30px 5px;
+  padding: 50px; */
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.d-inline {
+  /* display: inline */
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  margin: 100px;
+  padding: 50px;
+}
+
+.d-inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  margin: 100px;
+}
+
+.parent {
+  width: 500px;
+  height: 200px;
+  background-color: red;
+}
+
+.min {
+  min-width: 450px;
+  height: 100px;
+  background-color: orange;
+}
+
+.max {
+  max-width: 450px;
+  height: 100px;
+  background-color: purple;
+}
+
+/* 단위 */
+.box {
+  background-color: antiquewhite;
+  border: 1px solid black;
+}
+
+.box-px {
+  width: calc(50vw - 50px);
+  height: 50px;
+}
+
+.box-view {
+  width: 50vw;
+  height: 50vh;
+  font-size: 8vw;
+}
+
+.box-per {
+  width: 50%;
+  height: 50%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.rem {
+  font-size: 2rem;
+}
+
+.em {
+  font-size: 2em;
+}
+
+/* border */
+.square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid gray */
+  cursor: pointer;
+}
+
+.border {
+  /* border: midium none black; */
+  /* border: 3px solid black; */
+  border-style: solid;
+  /* border-left-color: blueviolet; */
+  border-color: red orange yellow green;
+  border-left: 5px dashed slateblue;
+}
+
+.rounded {
+  border: none;
+  background-color: thistle;
+  /* border-radius: 10px; */
+  border-radius: 5px 10px 20px 40px;
+}
+
+.box-sizing {
+  padding: 20px;
+  border: 15px solid red;
+  background-color: orange;
+}
+
+.d-none {
+  /* display: none; */
+  background-color: red;
+}
+.invisible {
+  /* visibility: hidden; */
+  background-color: orangered;
+}
+.opacity-0 {
+  /* opacity: 0; */
+  background-color: tomato;
+}
+
+.square img[alt="곰"] {
+  with: 200px;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상클래스 선택자</title>
+    <style>
+      .div1 {
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+      }
+      /* hover, active, focus, visited */
+      /* 
+      - E:hover {} 요소에 마우스가 올라가있는 동안
+      - E:active {} 요소가 클릭되고 있는 동안
+      - E:focus {} 요소에 커서가 머물러 있는 동안
+      - E:visited {} 요소가 링크일 때, 해당링크를 방문했을 때의 스타일*/
+
+      .div1:hover {
+        backtround-color: black;
+        height: 150px;
+      }
+
+      .div1:active {
+        background-color: orange;
+        width: 150px;
+      }
+
+      input:focus {
+        background-color: tomato;
+      }
+
+      .links > a:hover {
+        background-color: coral;
+      }
+
+      .links > a:visited {
+        color: fuchsia;
+      }
+
+      /* 가상 클래스 선택자 2.
+      - E:first-child{} E가 첫번째 자식이라면 선택
+      - last-child{} E가 마지막 자식일 때 선택
+      - E:nth-child{} E가 n번째일때만 선택
+      - n에 관한 수식이나, 숫자, odd, even이 들어갈 수 있습니다.
+      - E:not(xyz) {} xyz가 아닌 다른 요소 선택
+      */
+
+      .zoo > * {
+        background-color: forestgreen;
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .zoo > *first-child {
+        background-color: yellowgreen;
+      }
+
+      .zoo li:last-child {
+        background-color: black;
+      }
+
+      .zoo li:nth-child(even) {
+        background-color: pink;
+      }
+
+      .zoo > *:not(div) {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <span>div1</span>
+    </div>
+
+    <input type="text" />
+
+    <div class="links">
+      <a href="https://www.naver.com">네이버</a>
+      <a href="https://www.daum.net">다음</a>
+    </div>
+
+    <hr />
+
+    <ul class="zoo">
+      <h1>동물원입니다.</h1>
+      <div>원숭이</div>
+      <li>lion</li>
+      <li>rabbit</li>
+      <li>tiger</li>
+      <li>elephant</li>
+      <li>puppy</li>
+      <div>코알라</div>
+      <li>panda</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.d-block {
+  background-color: orange;
+  width: auto;
+  height: 200px;
+}
+
+.d-inline-block {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+}
+
+.no1 {
+  background-color: skyblue;
+}
+
+.no2 {
+  background-color: green;
+}
+
+.no3 {
+  background-color: red;
+}

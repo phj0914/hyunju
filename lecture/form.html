@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form에 대해서 배워보아요</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" />
+      <input type="password" />
+      <input type="email" />
+      <input type="color" />
+      <input type="range" />
+      <input type="file" />
+      <input type="number" />
+      <input type="date" />
+
+      <h3>input type이 아닌 것은? (모두 고르시오)</h3>
+      <input type="checkbox" name="input" /> text <input type="checkbox" name="input" /> date
+      <input type="checkbox" name="input" /> image
+
+      <h3>img 태그의 속성인 것은? (1개)</h3>
+      <input type="radio" name="img" id="alt" /> <label for="alt">alt</label>
+      <input type="radio" name="img" id="href" /> <label for="href">href</label>
+      <input type="radio" name="img" id="target" /> <label for="target">target</label>
+      <input type="radio" name="img" id="value" disabled /> <label for="value">value</label>
+
+      <textarea placeholder="하고 싶은 말을 써주세요"></textarea>
+
+      <input type="button" value="제출" />
+      <input type="submit" />
+      <button>제<span style="color: red">출</span></button>
+
+      <select name="flower">
+        <optgroup label="shirts">
+          <option>00xl</option>
+          <option>001</option>
+          <option>00m</option>
+        </optgroup>
+        <optgroup label="pants">
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+        </optgroup>
+
+        <option>장미</option>
+        <option>흑장미</option>
+        <option disabled>백장미</option>
+      </select>
+    </form>
+  </body>
+</html>
